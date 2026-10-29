@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh-pages": "ng build --base-href /KB-HOMES/ && cp dist/kb-home/browser/index.html dist/kb-home/browser/404.html && touch dist/kb-home/browser/.nojekyll",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
