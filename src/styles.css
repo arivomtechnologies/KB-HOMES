@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #C9A84C;
+  --color-gold-light: #D4B96A;
+  --color-gold-dark: #A8862E;
+  --color-gold-muted: rgba(201, 168, 76, 0.12);
+  --color-gold-border: rgba(201, 168, 76, 0.3);
+
+  --color-dark: #0B0B0B;
+  --color-dark-surface: #111111;
+  --color-dark-card: #181818;
+  --color-dark-border: #1F1F1F;
+  --color-dark-border-light: #2A2A2A;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+
+  --shadow-gold: 0 0 35px rgba(201, 168, 76, 0.25);
+  --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0B0B0B;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Selection Highlight */
+::selection {
+  background: #C9A84C;
+  color: #0B0B0B;
+}
+
+/* Smooth Image Transitions */
+img {
+  will-change: transform, opacity;
+}
+
+/* Card Base Visibility */
+.service-card, .project-card, .testi-card, .value-card, .service-row {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Subtle Gold Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 4px;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A84C;
+}
