@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4B96A"/>
+      <stop offset="50%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#A8862E"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect x="0" y="0" width="64" height="64" rx="12" fill="#0B0B0B"/>
+  
+  <!-- Inner Dark Surface with Gold Border -->
+  <rect x="8" y="8" width="48" height="48" rx="4" fill="#181818" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  
+  <!-- Top Right Gold Accent -->
+  <rect x="52" y="4" width="8" height="8" rx="1.5" fill="url(#goldGrad)"/>
+  
+  <!-- KB Typography -->
+  <text x="32" y="41" text-anchor="middle" fill="url(#goldGrad)" font-family="'Playfair Display', 'Georgia', serif" font-weight="900" font-size="24" letter-spacing="-1">KB</text>
+</svg>
